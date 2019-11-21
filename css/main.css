@@ -1,4 +1,30 @@
 /* insert you css */
 body{
-    background: #e9ebee;
+    font-family: 'Oxygen', sans-serif;
+    background: white;
+    color: #1d2129;
+}
+
+.banner{
+    width: 100%;
+    background: yellow;
+    text-align: center;
+    padding: 30px;
+}
+
+.videoside{
+background: red;
+}
+
+.videoside iframe{
+    width: 100%;
+}
+
+.textside{
+    overflow: scroll;
+    height: 100%;
+}
+
+.content{
+
 }
