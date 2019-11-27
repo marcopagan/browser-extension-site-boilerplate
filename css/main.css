@@ -1,15 +1,25 @@
 /* GENERAL */
-body{
-    font-family: 'Oxygen', sans-serif;
-    background: white;
-    color: #1d2129;
-}
-
 @font-face {
     font-family: 'FBD_Logo';
     src: url('fbd_logo.woff') format('woff'),
          url('fbd_logo.ttf') format('truetype');
     font-weight: bold;
+}
+
+::selection {
+    background-color: black;
+    color: white;
+}
+
+::-moz-selection {
+    background-color: black;
+    color: white;
+}
+
+body{
+    font-family: 'Oxygen', sans-serif;
+    background: white;
+    color: #1d2129;
 }
 
 
@@ -64,7 +74,7 @@ background: red;
 /*MEDIA QUERY*/
 @media (min-width: 1px) {
   .banner_text{
-    padding: 20px;
+    padding: 10px;
   }
 
   .fbd_logo{
@@ -88,7 +98,7 @@ background: red;
 
 @media (min-width: 576px) {
   .banner_text{
-    padding: 30px;
+    padding: 25px;
   }
 
   .fbd_logo{
