@@ -1,17 +1,48 @@
-/* insert you css */
+/* GENERAL */
 body{
     font-family: 'Oxygen', sans-serif;
     background: white;
     color: #1d2129;
 }
 
-.banner{
-    width: 100%;
-    background: yellow;
-    text-align: center;
-    padding: 30px;
+@font-face {
+    font-family: 'FBD_Logo';
+    src: url('fbd_logo.woff') format('woff'),
+         url('fbd_logo.ttf') format('truetype');
+    font-weight: bold;
 }
 
+
+
+/* BANNER */
+.banner{
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+
+.banner_img{
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+}
+
+.banner_text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 80px;
+}
+
+.fbd_logo{
+    font-family: FBD_Logo;
+    color: #3b5998;
+}
+
+
+
+/* CONTENT */
 .videoside{
 background: red;
 }
@@ -27,4 +58,105 @@ background: red;
 
 .content{
 
+}
+
+
+/*MEDIA QUERY*/
+@media (min-width: 1px) {
+  .banner_text{
+    padding: 20px;
+  }
+
+  .fbd_logo{
+    font-size: 32px;
+}
+
+  .banner_text h1{
+    font-size: 28px;
+  }
+
+  .banner_text h2{
+    font-size: 16px;
+  }
+
+  .banner_img{
+    height: 200px;
+  }
+}
+
+
+
+@media (min-width: 576px) {
+  .banner_text{
+    padding: 30px;
+  }
+
+  .fbd_logo{
+    font-size: 36px;
+}
+
+  .banner_text h1{
+    font-size: 32px;
+  }
+
+  .banner_text h2{
+    font-size: 20px;
+  }
+
+  .banner_img{
+    height: 200px;
+  }
+}
+
+
+
+@media (min-width: 768px) {
+  .banner_text{
+    padding: 40px;
+  }
+
+  .fbd_logo{
+    font-size: 42px;
+}
+
+  .banner_text h1{
+    font-size: 36px;
+  }
+
+  .banner_text h2{
+    font-size: 24px;
+  }
+
+  .banner_img{
+    height: 300px;
+  }
+}
+
+
+
+@media (min-width: 992px) {
+  .banner_text{
+    padding: 80px;
+  }
+
+  .fbd_logo{
+    font-size: 46px;
+}
+
+  .banner_text h1{
+    font-size: 40px;
+  }
+
+  .banner_text h2{
+    font-size: 28px;
+  }
+
+  .banner_img{
+    height: 400px;
+  }
+}
+
+
+
+@media (min-width: 1200px) {
 }
