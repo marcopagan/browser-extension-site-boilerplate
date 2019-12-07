@@ -33,6 +33,8 @@ p{
     position: relative;
     width: 100%;
     text-align: center;
+    /*border-bottom: 5px solid #3b5998;*/
+    margin-bottom: 30px;
 }
 
 .banner_img{
@@ -64,20 +66,26 @@ p{
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  -webkit-box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4);
 }
 
 .textside{
     overflow: scroll;
     height: 100%;
     margin-top: 30px;
-    margin-bottom: 100px;
+    margin-bottom: 40px;
+}
+
+.download_wrapper{
+    margin-top: 60px;
+    text-align: center;
 }
 
 .download{
     background-color: #FFF;
     border-color: rgb(223, 223, 223);
     color: #1d2129;
-    margin-top: 30px;
 }
 
 .download:hover{
@@ -86,9 +94,55 @@ p{
     color: #FFF;
 }
 
+.download_text{
+    margin-top: .5em;
+}
+
+
+
+/* FOOTER */
+.page-footer{
+    padding-top: 20px;
+    padding-bottom: 30px;
+    font-size: 14px;
+    background-color: #1d2129;
+    color: #FFF;
+}
+
+.page-footer p{
+    margin-bottom: 1em;
+}
+
+.page-footer hr{
+    border-color: #FFF;
+    margin-top: 0em;
+    margin-bottom: 0em;
+}
+
+.footer_text{
+    text-align: center;
+}
+
+.footer_copyright{
+    margin-top: 1em;
+}
+
+.page-footer p{
+    font-size: 14px;
+}
+
+
 
 /*MEDIA QUERY*/
 @media (min-width: 1px) {
+  .download_text{
+    text-align: center;
+  }
+
+  .download_text p{
+    margin-bottom: 0em;
+  }
+
   .banner_text{
     padding: 10px;
   }
@@ -113,6 +167,14 @@ p{
 
 
 @media (min-width: 576px) {
+  .download_text{
+    text-align: center;
+  }
+
+  .download_text p{
+    margin-bottom: 0em;
+  }
+
   .banner_text{
     padding: 25px;
   }
@@ -142,6 +204,14 @@ p{
 
 
 @media (min-width: 768px) {
+  .download_text{
+    text-align: left;
+  }
+
+  .download_text p{
+    margin-bottom: 1em;
+  }
+
   .banner_text{
     padding: 40px;
   }
